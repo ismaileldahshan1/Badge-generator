@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Check your generated badge</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square to Circle Image</title>
+    <style type="text/css">
+        .circle-img {
+            width: 512px; /* Set the desired width */
+            height: 512px; /* Set the desired height */
+            border-radius: 50%; /* Make it a circle */
+            overflow: hidden; /* Clip the image within the circle */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Check your generated badge</h1>
+    {%if success%}
+
+    <p>Image successfully processed and meets the criteria for a happy badge!</p>
+
+ <div class="circle-img">
+    <img src="{{generatedBadgeFileName}}" alt="Square Image">
+</div>
+    <p><a href="/">Back to Home</a></p>
+{%else%}
+ <p> Image doesn't meet requirements for the 512 x 512 picture, please return to the home page. </p>
+      <p><a href="/">Back to Home</a></p>
+{%endif%}
+</body>
+</html>
