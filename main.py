@@ -22,8 +22,8 @@ def upload_avatar():
      success= False
 
 
-
-    pil_image.thumbnail((512, 512))
+## For debugging purposes only 
+    ##pil_image.thumbnail((512, 512))
 
     # pil_image = pil_image.convert("RGB")
     image = Image.new("RGBA", pil_image.size, "GOLD")
