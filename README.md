@@ -30,9 +30,9 @@ FLASK: https://pypi.org/project/Flask/
 To install the UUID the command used is pip install uuid.
 Finally after configuring everything, the github project should be installed and must be compiled using a pyhton compiler.
 Then, using the terminal to configure the project these commands must be used in the same order as below.
- export FLASK_APP=main
- export FLASK_ENV=development
- flask run
+ export FLASK_APP=main,
+ export FLASK_ENV=development,
+ flask run.
 After running a link will be generated, click on it and the usage of how to use the website is down below. 
 
 Usage
